@@ -85,7 +85,6 @@ body {
   max-width: 30rem;
   border-radius: 1.5rem;
   background-color: #20262f;
-  border: 2px solid green;
   margin-left: 2.5rem;
 }
 
@@ -97,11 +96,9 @@ h1 {
 p {
   color: #9399a2;
   width: 80%;
-  border: 2px solid yellow;
 }
 ol {
   width: 80%;
-  border: 2px solid dodgerblue;
   /* justify-content: space-between; */
   padding: 0;
   margin-right: 20rem;
