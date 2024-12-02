@@ -81,34 +81,41 @@ body {
   justify-content: center;
   gap: 1.5rem;
   padding: 2rem;
-  text-align: left;
-  width: 20rem;
-  max-width: 20rem;
+  width: 80%;
+  max-width: 30rem;
   border-radius: 1.5rem;
   background-color: #20262f;
+  border: 2px solid green;
+  margin-left: 2.5rem;
 }
 
 h1 {
+  width: 80%;
   color: #fdffff;
 }
 
 p {
   color: #9399a2;
+  width: 80%;
+  border: 2px solid yellow;
 }
 ol {
-  display: flex;
-  width: 100%;
+  width: 80%;
   border: 2px solid dodgerblue;
-  justify-content: flex-start;
+  /* justify-content: space-between; */
+  padding: 0;
+  margin-right: 20rem;
 }
 
-ol li {
+li {
+  font-size: 1rem;
   display: flex;
   list-style: none;
-  justify-content: flex-start;
-  width: 1rem;
-  height: 1rem;
-  margin-inline: auto;
+  justify-content: center;
+  align-items: center;
+  /* line-height: 2rem; */
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: #272e37;
   color: #949ba4;
@@ -135,15 +142,15 @@ img {
 
 .row {
   display: flex;
-  width: 80%;
+  /* width: 80%; */
   justify-content: space-between;
-  margin-inline: auto;
+  /* margin-inline: auto; */
 }
 
 .submit {
   color: black;
   width: 80%;
-  margin-inline: auto;
+  /* margin-inline: auto; */
   background-color: #ed7d35;
   border: 2px solid #ed7d35;
   border-radius: 1rem;
@@ -188,4 +195,13 @@ img {
 .wrapper-thank-you p {
   width: 70%;
   margin-bottom: 2rem;
+}
+
+h1,
+p,
+ol,
+button {
+  width: 80%;
+  /* margin: 0 auto; */
+  margin-inline-start: 1rem;
 }
