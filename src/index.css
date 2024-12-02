@@ -1,0 +1,191 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141519;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  text-align: left;
+  width: 20rem;
+  max-width: 20rem;
+  border-radius: 1.5rem;
+  background-color: #20262f;
+}
+
+h1 {
+  color: #fdffff;
+}
+
+p {
+  color: #9399a2;
+}
+ol {
+  display: flex;
+  width: 100%;
+  border: 2px solid dodgerblue;
+  justify-content: flex-start;
+}
+
+ol li {
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  width: 1rem;
+  height: 1rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  background-color: #272e37;
+  color: #949ba4;
+}
+ol li:hover {
+  color: #1e2126;
+  background-color: #ffffff;
+}
+
+li.selected {
+  color: #9399a2;
+  background-color: white;
+}
+
+img {
+  width: 1rem;
+  height: 1rem;
+  background-color: #2d2d2d;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+.submit {
+  color: black;
+  width: 80%;
+  margin-inline: auto;
+  background-color: #ed7d35;
+  border: 2px solid #ed7d35;
+  border-radius: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+.submit:hover {
+  color: #141519;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+}
+
+/* thank you card */
+.wrapper-thank-you {
+  display: flex;
+
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 70%;
+  gap: 1rem;
+
+  background-color: #1c222b;
+}
+
+.wrapper-thank-you img {
+  margin-top: 2%;
+  width: 8rem;
+  height: 8rem;
+}
+
+.wrapper-thank-you span {
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  color: #b67a4f;
+  background-color: #272e36;
+}
+
+.wrapper-thank-you p {
+  width: 70%;
+  margin-bottom: 2rem;
+}
