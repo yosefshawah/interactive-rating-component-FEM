@@ -5,7 +5,7 @@ const ResultCard = () => {
   const { rating } = useContext(RatingContext);
   return (
     <div className="wrapper-thank-you">
-      <img src="images/illust ration-thank-you.svg" alt="" />
+      <img src="images/illustration-thank-you.svg" alt="" />
       <span>you selected {rating} out of 5</span>
       <h1>Thank you!</h1>
       <p>
